@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.unibas.dmi.dbis.cs108.AmongAlien.gui.WinLoseController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="562.0" layoutY="304.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@WinLoseHintergrund.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="EndGame" layoutX="1100.0" layoutY="600.0" mnemonicParsing="false" onAction="#leaveGame" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #340700#340700 #340700#340700; -fx-background-radius: 36;" text="QUIT GAME" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="Victory" layoutX="526.0" layoutY="426.0" text="VICTORY" textAlignment="CENTER" textFill="#fefdba">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="Defeat" layoutX="548.0" layoutY="426.0" text="DEFEAT" textAlignment="CENTER" textFill="#340700">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="lobbyButton" layoutX="900.0" layoutY="600.0" mnemonicParsing="false" onAction="#goToLobby" onMouseClicked="#goToLobby" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #340700#340700 #340700#340700; -fx-background-radius: 36;" text="LOBBY" textFill="#00d7cc">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

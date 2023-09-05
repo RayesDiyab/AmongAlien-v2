@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #00274E#00274E #00274E #00274E#00274E #00274E;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.unibas.dmi.dbis.cs108.AmongAlien.gui.PlayerChooseController">
+   <children>
+      <Label fx:id="humanText" layoutX="530.0" layoutY="120.0" text="HUMAN" textFill="#fefdba">
+         <font>
+            <Font name="Arial" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="alienText" layoutX="553.0" layoutY="120.0" text="ALIEN" textFill="#3dc83b">
+         <font>
+            <Font name="Arial" size="60.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="player1" fitHeight="89.0" fitWidth="86.0" layoutX="84.0" layoutY="330.0" onMouseClicked="#vote1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P012.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player6" fitHeight="89.0" fitWidth="86.0" layoutX="84.0" layoutY="498.0" onMouseClicked="#vote6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player3" fitHeight="89.0" fitWidth="86.0" layoutX="597.0" layoutY="330.0" onMouseClicked="#vote3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P212.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player8" fitHeight="89.0" fitWidth="86.0" layoutX="596.0" layoutY="498.0" onMouseClicked="#vote8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P712.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player2" fitHeight="89.0" fitWidth="86.0" layoutX="340.0" layoutY="331.0" onMouseClicked="#vote2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P112.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player7" fitHeight="89.0" fitWidth="86.0" layoutX="340.0" layoutY="499.0" onMouseClicked="#vote7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P612.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player4" fitHeight="89.0" fitWidth="86.0" layoutX="852.0" layoutY="332.0" onMouseClicked="#vote4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P312.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player9" fitHeight="89.0" fitWidth="86.0" layoutX="852.0" layoutY="500.0" onMouseClicked="#vote9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P812.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player5" fitHeight="89.0" fitWidth="86.0" layoutX="1108.0" layoutY="333.0" onMouseClicked="#vote5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P412.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player10" fitHeight="89.0" fitWidth="86.0" layoutX="1108.0" layoutY="498.0" onMouseClicked="#vote10" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Players/P912.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="definitivPlayer" fitHeight="285.0" fitWidth="342.0" layoutX="469.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

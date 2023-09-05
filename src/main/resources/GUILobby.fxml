@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #00274E#00274E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.unibas.dmi.dbis.cs108.AmongAlien.gui.LobbyController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4c93" height="49.0" layoutX="1087.0" layoutY="541.0" stroke="TRANSPARENT" strokeType="INSIDE" width="112.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4c93" height="70.0" layoutX="735.0" layoutY="152.0" stroke="TRANSPARENT" strokeType="INSIDE" width="142.0" />
+      <Label layoutX="93.0" layoutY="101.0" prefHeight="39.0" prefWidth="182.0" text="LOBBYS" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lobbyList" layoutX="93.0" layoutY="152.0" prefHeight="403.0" prefWidth="346.0" style="-fx-background-radius: 45;" />
+      <ListView fx:id="playerList" layoutX="484.0" layoutY="344.0" prefHeight="344.0" prefWidth="227.0" style="-fx-background-radius: 45;" />
+      <Label layoutX="483.0" layoutY="101.0" prefHeight="39.0" prefWidth="242.0" text="CREATE NEW LOBBY" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newLobby" layoutX="483.0" layoutY="152.0" prefHeight="70.0" prefWidth="336.0" promptText="New Lobby" style="-fx-background-radius: 36; -fx-background-color: #1B4C93#1B4C93;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button fx:id="createLobby" layoutX="783.0" layoutY="152.0" mnemonicParsing="false" onAction="#createLobby" prefHeight="70.0" prefWidth="189.0" style="-fx-background-color: #003A55#003A55; -fx-background-radius: 36;" text="CREATE" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="556.0" layoutY="255.0" prefHeight="4.0" prefWidth="227.0" text="YOUR LOBBY IS:" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="startLobby" layoutX="1033.0" layoutY="618.0" mnemonicParsing="false" onAction="#startLobby" prefHeight="70.0" prefWidth="189.0" style="-fx-background-color: #A38B16#A38B16; -fx-background-radius: 36;" text="START" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="joinButton" layoutX="90.0" layoutY="619.0" mnemonicParsing="false" onAction="#joinLobby" prefHeight="72.0" prefWidth="173.0" style="-fx-background-color: #007F00#007F00; -fx-background-radius: 36;" text="JOIN LOBBY" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="leaveButton" layoutX="276.0" layoutY="620.0" mnemonicParsing="false" onAction="#quitLobbyGUI" prefHeight="72.0" prefWidth="173.0" style="-fx-background-color: #340700#340700; -fx-background-radius: 36;" text="QUIT GAME" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="93.0" layoutY="39.0" prefHeight="50.0" prefWidth="270.0" text="AMONG ALIEN" textFill="#fefdba">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="972.0" layoutY="45.0" prefHeight="39.0" prefWidth="73.0" text="NAME:" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="1045.0" layoutY="45.0" prefHeight="39.0" prefWidth="196.0" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="chatWindow" layoutX="1014.0" layoutY="244.0" prefHeight="270.0" prefWidth="227.0" />
+      <TextField fx:id="chatInput" layoutX="1010.0" layoutY="541.0" prefHeight="49.0" prefWidth="169.0" promptText="Chat" style="-fx-background-radius: 36; -fx-background-color: #1B4C93#1B4C93;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button fx:id="sendChat" layoutX="1165.0" layoutY="541.0" mnemonicParsing="false" onAction="#sendChat" prefHeight="49.0" prefWidth="88.0" style="-fx-background-color: #003A55#003A55; -fx-background-radius: 36;" text="SEND" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ListView fx:id="totalPlayerList" layoutX="745.0" layoutY="344.0" prefHeight="344.0" prefWidth="227.0" style="-fx-background-radius: 45;" />
+      <Label layoutX="506.0" layoutY="294.0" prefHeight="39.0" prefWidth="182.0" text="PLAYERS IN LOBBY" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="796.0" layoutY="294.0" prefHeight="39.0" prefWidth="125.0" text="ALL PLAYERS" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lobbyName" layoutX="710.0" layoutY="251.0" prefHeight="39.0" prefWidth="242.0" textFill="#00ddcf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="highScoreListButon" layoutX="1014.0" layoutY="173.0" mnemonicParsing="false" onAction="#updateHighScoreList" prefHeight="49.0" prefWidth="227.0" style="-fx-background-color: #A38B16; -fx-background-radius: 36;" text="HIGH SCORE LIST" textFill="#00d7cc">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="joinButton1" layoutX="165.0" layoutY="567.0" mnemonicParsing="false" onAction="#leaveLobby" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: #A38B16#A38B16 #A38B16#A38B16; -fx-background-radius: 36;" text="LEAVE LOBBY" textAlignment="CENTER" textFill="#00d7cc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="highScoreListButon1" layoutX="1014.0" layoutY="116.0" mnemonicParsing="false" onAction="#updateGameList" prefHeight="49.0" prefWidth="227.0" style="-fx-background-color: #A38B16; -fx-background-radius: 36;" text="GAME LIST" textFill="#00d7cc">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
