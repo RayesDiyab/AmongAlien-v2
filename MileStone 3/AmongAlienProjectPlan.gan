@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-28" view-index="0" gantt-divider-location="858" resource-divider-location="300" version="3.0.3005" locale="de_DE">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="419" order="0"/>
+        <field id="tpd4" name="Anfang" width="218" order="1"/>
+        <field id="tpd5" name="Ende" width="217" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#00ff00 #33cc00 #99ff00 #9999ff #cc00ff #ccff00 #ffcc66 #6699ff #99ff99 #ff99cc]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ressource" width="210" order="0"/>
+        <field id="1" name="Rolle" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="188" name="Milestone 1" color="#99ff99" meeting="false" start="2022-03-03" duration="10" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="false">
+            <task id="32" name="Gruppe (Joel, Hamza, Jonathan, Rayes) AMONG ALIEN" color="#99ff99" meeting="false" start="2022-03-03" duration="3" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" priority="4" expand="true"/>
+            <task id="41" name="Diary Erstellen" color="#99ff99" meeting="false" start="2022-03-08" duration="3" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+            <task id="4" name="Protokollgedanken: Was müssen Server und Client kommunizieren." color="#99ff99" meeting="false" start="2022-03-10" duration="3" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
+            <task id="0" name="Erstellen der Präsentation" color="#99ff99" meeting="false" start="2022-03-15" duration="1" complete="0" thirdDate="2018-11-22" thirdDate-constraint="0" priority="2" expand="true"/>
+            <task id="1" name="Übernehmen des Server-Client-Codes von den Folien (Gedanken zu unserem Game Commands)" color="#99ff99" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true">
+                <task id="15" name="Server soll eine Liste aller Clients führen." color="#99ff99" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
+                <task id="5" name="Client soll beim Start nach Verbindung fragen, diese herstellen und halten." color="#66ff66" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
+                <task id="10" name="Clients sollen alle Client ansprechen können." color="#99ff99" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
+                <task id="117" name="/setPos Playername x y , /setMsg PlayerName, /addMat, /aktPos /setMap...." color="#99ff99" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="190" name="Milestone 2" color="#6699ff" meeting="false" start="2022-03-21" duration="6" complete="0" thirdDate="2021-03-19" thirdDate-constraint="0" expand="false">
+            <task id="81" name="Netzwerkprotokoll wird vom Server und Client korrekt angewendet" color="#6699ff" meeting="false" start="2022-03-21" duration="6" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="42" name="Gitgnore File erstellen DONE" color="#6699ff" meeting="false" start="2022-03-21" duration="1" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="45" name="Login AmongAlien via Terminal" color="#6699ff" meeting="false" start="2022-03-21" duration="2" complete="0" thirdDate="2021-03-04" thirdDate-constraint="0" expand="true"/>
+            <task id="120" name="Logout AmonAlien via Terminal" color="#6699ff" meeting="false" start="2022-03-21" duration="2" complete="0" thirdDate="2021-03-08" thirdDate-constraint="0" expand="true"/>
+            <task id="49" name="Live ingame Chat between Clients" color="#6699ff" meeting="false" start="2022-03-22" duration="2" complete="0" thirdDate="2021-03-04" thirdDate-constraint="0" expand="true"/>
+            <task id="53" name="AmongAlien Client - Server PING" color="#6699ff" meeting="false" start="2022-03-24" duration="2" complete="0" thirdDate="2021-03-04" thirdDate-constraint="0" expand="true"/>
+            <task id="58" name="AmongAlien Client - Server PONG" color="#6699ff" meeting="false" start="2022-03-25" duration="2" complete="0" thirdDate="2021-03-04" thirdDate-constraint="0" expand="true"/>
+            <task id="118" name="Change Name (After Login) + Name suggestions from Server" color="#6699ff" meeting="false" start="2022-03-28" duration="1" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
+            <task id="73" name="Product: Encoding, Decoding and Validation" color="#6699ff" meeting="false" start="2022-03-28" duration="1" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="84" name="Bonus Points / Double Checking" color="#6699ff" meeting="false" start="2022-03-28" duration="1" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="162" name="Milestone 2 Ende" color="#6699ff" meeting="true" start="2022-03-28" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Milestone 3 (Working Demo of AmongAlien)" color="#ff99cc" meeting="false" start="2022-03-31" duration="14" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="false">
+            <task id="6" name="Spiel State ist auf dem Server gespeichert nich auf Client" color="#ff99cc" meeting="false" start="2022-03-31" duration="4" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="240" name="Zoom meeting" color="#8cb6ce" meeting="false" start="2022-04-01" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="238" name="Eigenschaften für who what when - Milestone 3" color="#8cb6ce" meeting="false" start="2022-04-04" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="242" name="Eigenschaften für Technology" color="#8cb6ce" meeting="false" start="2022-04-04" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Beschreibt tools, libraries und processes, die wir nutzen und nicht in der Vorlesung vorgestellt wurden
+
+Adobe
+Gimp
+etc.]]>
+                </notes>
+            </task>
+            <task id="90" name="Server is Running across all lobbies and is controllable via cmd" color="#ff99cc" meeting="false" start="2022-04-04" duration="7" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true">
+                <task id="7" name="Implementieren von Libraries (Welche? kommt noch)" color="#ff99cc" meeting="false" start="2022-04-04" duration="7" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+                <task id="109" name="Command Line commands fine tuning  (client &lt;hostadress&gt;:&lt;port&gt; [&lt;username&gt;] | server &lt;port&gt;)" color="#ff99cc" meeting="false" start="2022-04-04" duration="3" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+                <task id="110" name="Server hat joinable Lobbies" color="#ff99cc" meeting="false" start="2022-04-05" duration="2" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+                <task id="112" name="Netzwerkprotokoll ist abgeschlossen!" color="#ff99cc" meeting="false" start="2022-04-07" duration="4" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+                <task id="256" name="Spielende ( Menschen verlieren / Gewinnen) implementieren" color="#ffcc66" meeting="false" start="2022-04-04" duration="5" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="255" name="Player List" color="#8cb6ce" meeting="false" start="2022-04-11" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[There is a way to list all players currently connected to the server]]>
+                </notes>
+            </task>
+            <task id="253" name="Progress Report" color="#8cb6ce" meeting="false" start="2022-04-11" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Wie die Dinge laufen - Projekt timeline und Verantwortungn, Veränderungen und Probleme]]>
+                </notes>
+            </task>
+            <task id="111" name="Mechanics wie Hunger, etc sind implementiert" color="#ff99cc" meeting="false" start="2022-04-13" duration="5" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="2" name="Live Chat in GUI" color="#ff99cc" meeting="false" start="2022-04-13" duration="5" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="8" name="In der GUI alle Spieler in der Lobby auflisten" color="#ff99cc" meeting="false" start="2022-04-15" duration="3" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="246" name="Shall we play a game" color="#8cb6ce" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Zusammen die Demo spielen - a working prototype of the game logic in the exercise slot by playing the game (Terminal or GUI)]]>
+                </notes>
+            </task>
+            <task id="9" name="Benutzerhandbuch erstellen (InGame)" color="#ff99cc" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="108" name="AmongAlien Jar and Javadoc" color="#ff99cc" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2021-03-03" thirdDate-constraint="0" expand="true"/>
+            <task id="249" name="Protocol Document" color="#8cb6ce" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[The definition of the network protocol in the external document is up to date]]>
+                </notes>
+            </task>
+            <task id="251" name="Protocol Code" color="#8cb6ce" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Network protocol is completely defined and documented in source code]]>
+                </notes>
+            </task>
+            <task id="248" name="QA" color="#8cb6ce" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="171" name="Präsentation Milestone 3" color="#ff99cc" meeting="false" start="2022-04-19" duration="1" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+            <task id="257" name="Graphical User Interface Fertig" color="#ffcc66" meeting="false" start="2022-04-18" duration="2" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
+            <task id="258" name="High Score List implementiert (Wieviel Materials gesammelt oder Aliens verhaftet / Menschen Entführt)" color="#ffcc66" meeting="false" start="2022-04-18" duration="2" complete="0" thirdDate="2021-04-12" thirdDate-constraint="0" expand="true"/>
+            <task id="259" name="AmongAlien spielen und vorzeigen!" color="#ffcc66" meeting="false" start="2022-04-19" duration="1" complete="0" thirdDate="2021-04-12" thirdDate-constraint="0" expand="true"/>
+            <task id="262" name="Server mit GameServer oder Game erweitern" color="#8cb6ce" meeting="false" start="2022-04-04" duration="12" complete="0" thirdDate="2021-04-12" thirdDate-constraint="0" priority="2" expand="true"/>
+        </task>
+        <task id="165" name="Milestone 3 Ende" color="#ff99cc" meeting="true" start="2022-04-19" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+        <task id="191" name="Milestone 4" color="#ffcc66" meeting="false" start="2022-04-20" duration="18" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
+            <task id="205" name="Spielregeln werden Implementiert, d.H Chat filter fuer AmongAlien Live Chat)" color="#ffcc66" meeting="false" start="2022-04-27" duration="2" complete="0" thirdDate="2021-04-12" thirdDate-constraint="0" expand="true"/>
+            <task id="267" name="Implementation von Ghost Mode" color="#8cb6ce" meeting="false" start="2022-04-21" duration="5" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="276" name="Animationen stabiler machen" color="#8cb6ce" meeting="false" start="2022-04-28" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="280" name="Scene Wechsel Stabiler machen" color="#8cb6ce" meeting="false" start="2022-04-20" duration="8" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="281" name="Lobby Bugs fixen bei der Rückehr zur Lobby vom Spielende" color="#8cb6ce" meeting="false" start="2022-04-21" duration="5" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="207" name="AmongAlien Testen und restliche Bugs ausbuegeln" color="#ffcc66" meeting="false" start="2022-04-29" duration="2" complete="0" thirdDate="2021-04-12" thirdDate-constraint="0" expand="true"/>
+            <task id="286" name="ALLE Mechanics sind präsent und funktionieren fehlerlos" color="#9999ff" meeting="false" start="2022-05-04" duration="8" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="210" name="Milestone 4 Ende" color="#ffcc66" meeting="true" start="2022-05-02" duration="0" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
+        <task id="211" name="Milestone 5" color="#9999ff" meeting="false" start="2022-05-04" duration="11" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
+            <task id="218" name="Git Sci Score Repository Archiv ist sinvoll gestaltet" color="#9999ff" meeting="false" start="2022-05-16" duration="3" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+            <task id="217" name="Programm Architektur Dokumentieren" color="#9999ff" meeting="false" start="2022-05-04" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+            <task id="216" name="Schlusspräsentation" color="#9999ff" meeting="false" start="2022-05-16" duration="3" complete="0" thirdDate="2021-05-21" thirdDate-constraint="0" expand="true">
+                <task id="223" name="Was haben wir gelernt von AmongAlien?" color="#9999ff" meeting="false" start="2022-05-16" duration="3" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="222" name="Bibliotheken sind via Gradle gemanaged (Maven Central)" color="#9999ff" meeting="false" start="2022-05-16" duration="3" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="224" name="Alle Externen Bibliotheken und Tools die wir gebraucht haben erklaeren" color="#9999ff" meeting="false" start="2022-05-16" duration="3" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="231" name="Bonus Punkte" color="#00ff00" shape="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-17" thirdDate-constraint="0" expand="true">
+                <task id="225" name="Controller Support" color="#00ff00" shape="1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="226" name="Audio in AmongAlien" color="#00ff00" shape="1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="227" name="Free to Play (Spiel ist runterladbar)" color="#00ff00" shape="1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="228" name="Multiplatform Linux und Windows" color="#00ff00" shape="1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="230" name="Präsentation Trailer" color="#00ff00" shape="1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1" meeting="false" start="2022-05-17" duration="2" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+                <task id="287" name="Website erstellen" color="#8cb6ce" meeting="false" start="2022-05-17" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="213" name="Milestone 5 Ende" color="#9999ff" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="true" start="2022-05-18" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="4" name="Hamza" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Rayes" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Joël" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="6" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="240" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="242" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="111" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="249" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="251" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="205" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="256" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="257" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="267" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="276" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="207" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="286" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="280" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="218" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="217" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="216" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="216" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="240" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="255" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="111" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="108" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="251" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="249" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="109" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="110" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="112" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="205" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="256" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="258" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="267" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="280" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="281" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="286" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="218" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="217" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="216" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="240" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="111" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="108" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="251" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="249" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="205" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="267" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="207" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="286" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="218" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="217" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="216" resource-id="6" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
