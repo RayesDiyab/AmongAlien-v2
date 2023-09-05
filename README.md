@@ -64,4 +64,11 @@ Viel Spass!
 <br/><br/>
 <img width="240" src="src/main/resources/qr-code.png"> 
 
+--------------------------------------------------------------------
 
+## Anhang
+
+<h2>Zu grosse Daten</h2>
+In den Ordnern Milestone2, Milestone 5, outreach und src\main\resources
+muss man grössere Video Dateien downloaden, welche fuer Github zu gross sind.
+Klicken SIe bitte auf die .txt Datei und laden Sie die .mp4 Dateien von Google Drive runter
