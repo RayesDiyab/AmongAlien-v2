@@ -1,0 +1,85 @@
+plugins {
+    id 'java-library'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.12'
+    id 'jacoco'
+}
+
+javafx {
+    version = "17.0.1"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.media', 'javafx.swing']
+}
+
+group 'ch.unibas.dmi.dbis'
+version '0.0.1-ALPHA'
+mainClassName = 'ch.unibas.dmi.dbis.cs108.AmongAlien.Main'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+//adds maven central as a maven repository
+repositories {
+    mavenCentral()
+}
+
+/* The following lines are extensively documented. Please remove the documentation when you have read and understood it. */
+dependencies {
+    // EXAMPLE: LOGGING
+    /*
+    The following adds the logging framework Apache Log4J2.
+    The statements serve as an example on how to use libraries.
+    Since these are `implementation` dependencies, they are packed in the final jar.
+    Read the documentation at https://docs.gradle.org/current/userguide/declaring_dependencies.html to learn more
+     */
+    //implementation 'org.apache.logging.log4j:log4j-api:2.+'
+    //implementation 'org.apache.logging.log4j:log4j-core:2.+'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+
+    /*
+    This is another example - it imports the javafx-controls dependency
+     */
+    implementation 'org.openjfx:javafx-controls:18'
+    implementation("com.google.guava:guava:31.1-jre")
+
+    // JUNIT
+    /*
+    The following dependency is required to perform JUnit tests, as for example HelloWorldTest.
+    Since it is a `testCompile` dependency, it will not be part of the final product, only during testing.
+     */
+    testImplementation("org.junit.jupiter:junit-jupiter:5.+")
+    testCompile "org.mockito:mockito-core:2.+"
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+/*
+The following block adds both compile and runtime dependencies to the jar
+ */
+jar {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName
+        )
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+tasks.register('build-cs108') {
+    dependsOn tasks.build
+    dependsOn tasks.javadoc
+    group = 'build'
+    doLast {
+
+    }
+}
+
